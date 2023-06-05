@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "start": "node build/index"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^20.2.5",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1"
   }
 }
